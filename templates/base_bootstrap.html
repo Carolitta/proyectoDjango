@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>
+    {% block titulo %}
+    
+    {% endblock titulo %}
+  </title>
+  <link rel="shorcut icon" href="{% static 'img/django.png' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  {% block content %}
+      
+  {% endblock content %}
+
+</body>
+<script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</html>

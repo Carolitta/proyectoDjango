@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+Opiniones
+{% endblock titulo %}
+
+{% block content %}
+
+{% for opinion in opiniones %}
+
+<div class="container">
+
+	<div class="row">
+		<div class="col s12 m6">
+			<div class="card blue-grey lighten-3">
+				<div class="card-content black-text">
+					<span class="card-title"> Becario: {{ opinion.becario }}</span>
+					<h6>Curso: <span>{{ opinion.curso }}</span></h6>
+					<p>{{ opinion.comentario }}</p>
+				</div>
+				<div class="card-action">
+					<a href="{% url 'detalles' pk=opinion.pk %}"  >Detalles</a>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endfor %}
+    
+{% endblock content %}

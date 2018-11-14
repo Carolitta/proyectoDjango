@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block titulo %}
+    Inicio
+{% endblock titulo %}
+
+
+{% block content %}
+    <div class="container ">
+    	<center>
+		<h1 class="index">Bienvenid@ {{ request.user.username }}</h1>
+		<img src="{% static 'img/enc.png' %}" alt="Me"> <br>
+<<<<<<< HEAD
+		<button class="btn indigo accent-2"><a href="{% url 'comenzar' %}"  style="color:white;">Comenzar opinión</a></button>
+		<br><br>
+=======
+		<button class="btn indigo accent-2"><a href="{% url 'comenzar' %}">Comenzar opinión</a></button>
+>>>>>>> 2ccfec220ca0e732a3ff0d01e5bc70886888becc
+    
+		</center>
+
+	</div>
+{% endblock content %}
+
+
+

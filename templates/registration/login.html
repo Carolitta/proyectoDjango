@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class=" container">
+<<<<<<< HEAD
+<center>
+<marquee behavior="alternate" direction="right"><h4>Califica a tus instructores</h4></marquee>
+</center>
+=======
+
+  <span class="textLogo">Opina sobre los instructores</span>
+
+>>>>>>> 2ccfec220ca0e732a3ff0d01e5bc70886888becc
+</div>
+
+<div class="container">
+
+<div class="row">
+<div class="offset-m3 col m6 offset-m3">
+<form method="POST" >
+{% csrf_token %}
+	<h1 class="">Iniciar sesión</h1>
+
+{{ form.as_p }}
+
+	<br>
+	<button type="submit" class="btn ">Iniciar sesión</button><br><br>
+	<a href="/registrate">¿Aún no estas registrado? Regístrate</a>
+</form>
+</div>
+</div>
+</div>
+{% endblock %}
