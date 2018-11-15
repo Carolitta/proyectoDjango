@@ -102,11 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LOGIN_REDIRECT_URL = 'inicio'
-<<<<<<< HEAD
 LOGOUT_URL = 'inicio'
-=======
-
->>>>>>> 2ccfec220ca0e732a3ff0d01e5bc70886888becc
 
 
 # Internationalization

@@ -5,13 +5,9 @@ from .models import Opinion
 def inicio(request):
 	return render(request,'opiniones/index.html',{})
 
-<<<<<<< HEAD
 def listaOpiniones(request):
 	opiniones = Opinion.objects.filter().order_by('curso')
 	return render(request,'opiniones/listaOpiniones.html',{'opiniones':opiniones})
-=======
-
->>>>>>> 2ccfec220ca0e732a3ff0d01e5bc70886888becc
 def comenzar(request):
 	if request.method == 'POST':
 		form = FormularioOpinion(request.POST)
@@ -28,7 +24,6 @@ def comenzar(request):
 
 def detalles(request,pk):
 	opinion = get_object_or_404(Opinion,pk = pk)
-<<<<<<< HEAD
 	return render(request,'opiniones/detalles.html',{'opinion':opinion})
 
 def modificar(request,pk):
@@ -45,6 +40,3 @@ def modificar(request,pk):
 	
 	return render(request, 'opiniones/editar.html',{'form':form})
 
-=======
-	return render(request,'opiniones/detalles.html',{'opinion':opinion})
->>>>>>> 2ccfec220ca0e732a3ff0d01e5bc70886888becc

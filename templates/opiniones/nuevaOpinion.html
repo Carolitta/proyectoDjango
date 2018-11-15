@@ -1,18 +1,13 @@
 {% extends 'base_bootstrap.html' %}
 {% load staticfiles %}
 {% block titulo %}
-<<<<<<< HEAD
 Nueva opinión
-=======
-    Nueva opinión
->>>>>>> 2ccfec220ca0e732a3ff0d01e5bc70886888becc
 {% endblock titulo %}
 
 
 {% block content %}
 <br>
 <br>
-<<<<<<< HEAD
 
 <div class="container">
 	<div class="jumbotron">
@@ -27,20 +22,5 @@ Nueva opinión
 			</div>
 		</div>
 	</div>
-=======
-<br>
-<br>
-<br>
-<div class="row">
-	<div class="col-md-6 offset-md-3">
-<div class="container">
-	<form method="POST">
-		{% csrf_token %}	
-		{{ form.as_p }}
-		<button type="submit" class="btn"> Opinar</button>
-	</form>
-</div>
-</div>
->>>>>>> 2ccfec220ca0e732a3ff0d01e5bc70886888becc
 </div>
 {% endblock content %}

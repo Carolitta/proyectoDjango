@@ -20,7 +20,6 @@
 <body>
   <!--Elementos del dropdown de posts-->
   <ul id="dropdown1" class="dropdown-content">
-<<<<<<< HEAD
     <li><a style="color: black;" href="{% url 'listar' %}">Ver opiniones</a></li>
     <li><a style="color: black;" href="{% url 'comenzar' %}">Agregar opinión</a></li>
     <li class="divider"></li>
@@ -28,15 +27,6 @@
   <ul id="dropdown2" class="dropdown-content">
     <li><a style="color: black;" href="{% url 'listar' %}">Ver opiniones</a></li>
     <li><a style="color: black;" href="{% url 'comenzar' %}">Agregar opinión</a></li>
-=======
-    <li><a style="color: black;" href="">Ver posts</a></li>
-    <li><a style="color: black;" href="">Agregar post</a></li>
-    <li class="divider"></li>
-  </ul>
-  <ul id="dropdown2" class="dropdown-content">
-    <li><a style="color: black;" href="">Ver posts</a></li>
-    <li><a style="color: black;" href="">Agregar post</a></li>
->>>>>>> 2ccfec220ca0e732a3ff0d01e5bc70886888becc
     <li class="divider"></li>
   </ul>
   <!--Fin de elementos del dropdown-->
@@ -54,11 +44,7 @@
       <ul class="right hide-on-med-and-down">
         {% if user.is_authenticated %}
         <li><a style="color: black;" href="{% url 'inicio' %} ">Inicio</a></li>
-<<<<<<< HEAD
         <li><a style="color: black;" class="dropdown-trigger" href="#!" data-target="dropdown1">Opiniones<i class="material-icons right">arrow_drop_down</i></a>
-=======
-        <li><a style="color: black;" class="dropdown-trigger" href="#!" data-target="dropdown1">Posts<i class="material-icons right">arrow_drop_down</i></a>
->>>>>>> 2ccfec220ca0e732a3ff0d01e5bc70886888becc
         </li>
         <li><a style="color: black;background-color: #2AD5C5;" href="{% url 'logout' %}?next=/" >Cerrar sesión</a>
         </li>        
@@ -89,11 +75,7 @@
 
           <a class="github-button" href="https://github.com/Carolitta" data-size="large" aria-label="GitHub">GitHub</a>
         </p></div>
-<<<<<<< HEAD
         <div class="col m4 offset-m4"><a class="grey-text text-lighten-4 right" href="http://zonakubos.com">Equipo </a>
-=======
-        <div class="col m4 offset-m4"><a class="grey-text text-lighten-4 right" href="http://zonakubos.com">Equipo ...</a>
->>>>>>> 2ccfec220ca0e732a3ff0d01e5bc70886888becc
           <span >© 2018 PROTECO </span>
         </div>
       </div>
